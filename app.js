@@ -11,11 +11,12 @@ button.forEach((element) => {
 /*-------------------------------- Functions --------------------------------*/
 function print(event) {
   if (
-    display.textContent == "" &&
-    (event.target.textContent === "*" ||
-      event.target.textContent === "=" ||
-      event.target.textContent === "+" ||
-      event.target.textContent === "/")
+    (display.textContent == "" &&
+      (event.target.textContent === "*" ||
+        event.target.textContent === "=" ||
+        event.target.textContent === "+" ||
+        event.target.textContent === "/")) ||
+    event.target.textContent === "-"
   ) {
   } else {
     if (event.target.textContent !== "C" && event.target.textContent !== "=") {
